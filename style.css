@@ -1,0 +1,119 @@
+body {
+  font-family: 'Segoe UI', 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(120deg, #89f7fe, #66a6ff 40%, #eeaeca 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-container {
+  background: #fff8;
+  box-shadow: 0 8px 32px 0 #1f26875e;
+  border-radius: 24px;
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rainbow-text {
+  font-size: 2.7rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff8a00, #e52e71, #42e695, #ff8a00);
+  background-size: 400% 400%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: rainbow 7s ease infinite;
+  margin-bottom: 1.2rem;
+}
+
+@keyframes rainbow {
+  0%,100% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+}
+
+#meme-area {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 0 16px 2px #39f3;
+  margin-bottom: 1.2rem;
+  width: 320px;
+}
+
+#meme-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  animation: bounceIn 0.7s;
+}
+
+@keyframes bounceIn {
+  from {transform: scale(0.85); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
+
+#meme-question {
+  font-size: 1.18rem;
+  color: #3b3054;
+  font-weight: bold;
+}
+
+#user-answer {
+  font-size: 1.1rem;
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: 1.5px solid #d1d1e0;
+  outline: none;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s;
+}
+
+#user-answer:focus {
+  border-color: #66a6ff;
+}
+
+button {
+  padding: 0.85rem 2.2rem;
+  border-radius: 2rem;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  background: linear-gradient(90deg, #42e695, #3bb2b8);
+  cursor: pointer;
+  margin: 0.2rem;
+  transition: background 0.2s, transform 0.18s;
+  font-weight: bold;
+  box-shadow: 0 4px 16px #5ec6ff55;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #e52e71, #ff8a00);
+  transform: scale(1.05);
+}
+
+#feedback {
+  min-height: 24px;
+  font-size: 1.18rem;
+  font-weight: 600;
+  margin: 0.7rem 0 0.3rem 0;
+  color: #34495e;
+  text-shadow: 1px 1px 5px #f9ff;
+}
+
+#scoreboard {
+  margin-top: 1.2rem;
+  color: #383b4d;
+  font-size: 1.17rem;
+  font-weight: bold;
+  background: #b7ffe7dc;
+  padding: 0.6rem 2.1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #bef5ea40;
+}
