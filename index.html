@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Decode the Meme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1 class="rainbow-text">Decode the Meme</h1>
+    <div id="meme-area">
+      <img id="meme-img" src="" alt="tech meme" />
+      <p id="meme-question"></p>
+    </div>
+    <input id="user-answer" type="text" placeholder="Type your answer here">
+    <button id="submit-btn">Submit</button>
+    <p id="feedback"></p>
+    <div id="scoreboard">Score: <span id="score">0</span> / <span id="total"></span></div>
+    <button id="next-btn" style="display:none;">Next Meme</button>
+  </div>
+
+  <audio id="correct-sound" src="sounds/correct.mp3" preload="auto"></audio>
+  <audio id="wrong-sound" src="sounds/wrong.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
